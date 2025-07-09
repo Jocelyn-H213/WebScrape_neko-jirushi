@@ -31,6 +31,21 @@ Run the scraper with default settings:
 python cat_scraper.py
 ```
 
+### Large Scale Scraping (100+ cats, 1000+ images)
+
+For large-scale scraping with progress tracking and resume capabilities:
+
+```bash
+python large_scale_scraper.py
+```
+
+This specialized script will:
+- Target 100 cats and 1000 images
+- Save progress every 5 cats
+- Resume from where it left off if interrupted
+- Provide detailed progress updates
+- Track elapsed time and performance metrics
+
 ### Custom Configuration
 
 You can modify the scraper behavior by editing the parameters in the `main()` function:
@@ -38,8 +53,8 @@ You can modify the scraper behavior by editing the parameters in the `main()` fu
 ```python
 # In cat_scraper.py, modify these parameters:
 cats = scraper.scrape_cats(
-    max_pages=3,        # Number of listing pages to scrape
-    max_cats_per_page=5 # Maximum cats to process per page
+    max_total_cats=100,     # Target number of cats to scrape
+    max_total_images=1000   # Target number of images to download
 )
 ```
 
@@ -54,7 +69,7 @@ from cat_scraper import NekoJirushiScraper
 scraper = NekoJirushiScraper(delay=2)  # 2 second delay between requests
 
 # Scrape cats
-cats = scraper.scrape_cats(max_pages=5, max_cats_per_page=10)
+cats = scraper.scrape_cats(max_total_cats=100, max_total_images=1000)
 
 # Access results
 for cat in cats:

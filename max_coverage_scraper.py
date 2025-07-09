@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Max Coverage Neko Jirushi Cat Scraper
-Loops through all categories and pages, maximizing unique cats and images
+Uses AJAX endpoint to gather all foster cat profiles across all pages
 """
 
 import requests
@@ -32,7 +32,6 @@ logging.basicConfig(
 class MaxCoverageScraper:
     def __init__(self):
         self.base_url = config.BASE_URL
-        self.categories = config.CATEGORIES
         self.session = requests.Session()
         self.session.headers.update(config.HEADERS)
         self.delay_min = 1.5
@@ -82,10 +81,6 @@ class MaxCoverageScraper:
                     return None
                 time.sleep(random.uniform(self.delay_min, self.delay_max))
         return None
-
-    def get_max_page(self, soup):
-        pages = [int(a.text) for a in soup.select("div.paging a") if a.text.isdigit()]
-        return max(pages) if pages else 1
 
     def find_cat_profiles(self, soup):
         cat_links = soup.find_all('a', href=re.compile(r'/foster/\d+/'))
@@ -156,32 +151,27 @@ class MaxCoverageScraper:
         return downloaded
 
     def scrape(self):
-        logging.info(f"Starting max coverage scraping...")
+        logging.info(f"Starting max coverage scraping using AJAX endpoint...")
         try:
-            for category in self.categories:
-                page = 1
-                first_listing_url = f"{self.base_url}/{category}/cat/?p=1"
-                response = self.get_page(first_listing_url)
-                if not response:
-                    logging.warning(f"Failed to get first listing page: {first_listing_url}")
-                    continue
-                soup = BeautifulSoup(response.content, 'html.parser')
-                max_page = self.get_max_page(soup)
-                logging.info(f"Category '{category}': {max_page} pages detected")
-                for p in range(1, max_page + 1):
-                    listing_url = f"{self.base_url}/{category}/cat/?p={p}"
-                    logging.info(f"Scraping listing page: {listing_url}")
-                    response = self.get_page(listing_url)
-                    if not response:
-                        logging.warning(f"Failed to get listing page: {listing_url}")
-                        continue
-                    soup = BeautifulSoup(response.content, 'html.parser')
-                    cat_urls = self.find_cat_profiles(soup)
-                    logging.info(f"Found {len(cat_urls)} new cat profiles on page {p}")
-                    for cat_url in cat_urls:
-                        self.download_cat_images(cat_url)
-                        self.save_progress()
-                        time.sleep(random.uniform(self.delay_min, self.delay_max))
+            page = 1
+            while True:
+                ajax_url = f"{self.base_url}/foster/cat/contents/?p={page}"
+                logging.info(f"Scraping AJAX listing page: {ajax_url}")
+                response = self.get_page(ajax_url)
+                if not response or not response.text.strip():
+                    logging.info(f"No more content at page {page}. Stopping.")
+                    break
+                soup = BeautifulSoup(response.text, 'html.parser')
+                cat_urls = self.find_cat_profiles(soup)
+                if not cat_urls:
+                    logging.info(f"No new cat profiles found at page {page}. Stopping.")
+                    break
+                logging.info(f"Found {len(cat_urls)} new cat profiles on page {page}")
+                for cat_url in cat_urls:
+                    self.download_cat_images(cat_url)
+                    self.save_progress()
+                    time.sleep(random.uniform(self.delay_min, self.delay_max))
+                page += 1
         except KeyboardInterrupt:
             logging.info("Scraping interrupted by user")
             print(f"\n⏸️  Scraping interrupted. Progress saved.")

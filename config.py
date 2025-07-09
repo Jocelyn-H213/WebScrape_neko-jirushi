@@ -81,12 +81,14 @@ CAT_NAME_SELECTORS = [
 
 # CSS selectors for finding images
 IMAGE_SELECTORS = [
+    "img[src*='cat']",  # This is the main selector that works
+    "img[src*='/img/foster/']",  # More specific to foster images
+    "img[src*='detail']",  # Images in detail pages
     "div.catphoto img",
     ".cat-photos img",
     ".cat-images img",
     ".gallery img",
     ".photo-gallery img",
-    "img[src*='cat']",
     "img[src*='photo']",
     "img[src*='image']",
     ".catphoto img",

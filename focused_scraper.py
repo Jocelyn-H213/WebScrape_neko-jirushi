@@ -147,8 +147,11 @@ class FocusedNekoJirushiScraper:
                     src = img.get("src") or img.get("data-src")
                     if src:
                         full_url = urljoin(self.base_url, src)
-                        # Filter out navigation and UI images
-                        if not any(exclude in full_url.lower() for exclude in ['logo', 'icon', 'banner', 'header', 'nav']):
+                        # Filter out navigation and UI images - more comprehensive filtering
+                        if not any(exclude in full_url.lower() for exclude in [
+                            'logo', 'icon', 'banner', 'header', 'nav', 'gnav', 
+                            'mucho-domingo', 'headerhealth', 'headermail', 'headernotice'
+                        ]) and '/img/foster/' in full_url:
                             if full_url not in [img['url'] for img in cat_data['images']]:
                                 cat_data['images'].append({
                                     'url': full_url,

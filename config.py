@@ -9,8 +9,8 @@ DELAY_BETWEEN_REQUESTS = 2  # seconds
 DELAY_BETWEEN_IMAGES = 1    # seconds
 
 # Scraping limits
-MAX_PAGES = 3               # Maximum number of listing pages to scrape
-MAX_CATS_PER_PAGE = 5       # Maximum cats to process per page
+MAX_PAGES = 50              # Maximum number of listing pages to scrape
+MAX_CATS_PER_PAGE = 20      # Maximum cats to process per page
 MAX_RETRIES = 3             # Number of retries for failed requests
 
 # Output settings

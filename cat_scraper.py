@@ -178,63 +178,72 @@ class NekoJirushiScraper:
             logging.error(f"Failed to download {image_url}: {e}")
             return None
     
-    def scrape_cats(self, max_pages=5, max_cats_per_page=10):
-        """Main scraping function"""
+    def scrape_cats(self, max_total_cats=100, max_total_images=1000):
+        """Scrape until target number of cats and images reached"""
         all_cats = []
-        
-        for page in range(1, max_pages + 1):
-            logging.info(f"Scraping page {page}")
-            
+        seen_urls = set()
+        total_images = 0
+        page = 1
+
+        while len(all_cats) < max_total_cats and total_images < max_total_images:
+            logging.info(f"Scraping listing page {page}...")
             cat_urls = self.get_cat_listing_urls(page)
             if not cat_urls:
-                logging.warning(f"No cats found on page {page}, stopping")
+                logging.warning(f"No cats found on page {page}, stopping.")
                 break
-            
-            # Limit cats per page
-            cat_urls = cat_urls[:max_cats_per_page]
-            
+
+            # Filter out duplicates
+            cat_urls = [url for url in cat_urls if url not in seen_urls]
+            cat_urls = cat_urls[:config.MAX_CATS_PER_PAGE]
+
             for i, cat_url in enumerate(cat_urls):
-                logging.info(f"Processing cat {i+1}/{len(cat_urls)} on page {page}: {cat_url}")
-                
+                if len(all_cats) >= max_total_cats or total_images >= max_total_images:
+                    break
+
+                logging.info(f"[{len(all_cats)+1}] Processing cat: {cat_url}")
+                seen_urls.add(cat_url)
+
                 cat_data = self.get_cat_profile_data(cat_url)
                 if cat_data and cat_data['images']:
-                    # Download images
                     downloaded_images = []
                     for j, img_info in enumerate(cat_data['images']):
-                        filepath = self.download_image(
-                            img_info['url'], 
-                            cat_data['safe_name'], 
-                            j + 1
-                        )
+                        if total_images >= max_total_images:
+                            break
+                        filepath = self.download_image(img_info['url'], cat_data['safe_name'], j + 1)
                         if filepath:
                             img_info['local_path'] = filepath
                             downloaded_images.append(img_info)
-                        time.sleep(config.DELAY_BETWEEN_IMAGES)  # Be polite
-                    
-                    cat_data['images'] = downloaded_images
-                    all_cats.append(cat_data)
-                    
-                    # Save individual cat data
-                    cat_file = os.path.join(self.data_dir, f"{cat_data['safe_name']}.json")
-                    with open(cat_file, 'w', encoding='utf-8') as f:
-                        json.dump(cat_data, f, ensure_ascii=False, indent=2)
-                
-                time.sleep(self.delay)  # Be polite between cats
-            
-            time.sleep(self.delay)  # Be polite between pages
-        
+                            total_images += 1
+                        time.sleep(config.DELAY_BETWEEN_IMAGES)
+
+                    if downloaded_images:
+                        cat_data['images'] = downloaded_images
+                        all_cats.append(cat_data)
+
+                        # Save individual cat data
+                        cat_file = os.path.join(self.data_dir, f"{cat_data['safe_name']}.json")
+                        with open(cat_file, 'w', encoding='utf-8') as f:
+                            json.dump(cat_data, f, ensure_ascii=False, indent=2)
+
+                    logging.info(f"Total cats so far: {len(all_cats)} | Total images: {total_images}")
+                time.sleep(self.delay)
+
+            page += 1
+            time.sleep(self.delay)
+
         # Save summary
         summary = {
             'total_cats': len(all_cats),
+            'total_images': total_images,
             'scraped_at': datetime.now().isoformat(),
-            'cats': [{'name': cat['name'], 'safe_name': cat['safe_name'], 'image_count': len(cat['images'])} for cat in all_cats]
+            'cats': [{'name': c['name'], 'safe_name': c['safe_name'], 'image_count': len(c['images'])} for c in all_cats]
         }
-        
+
         summary_file = os.path.join(self.output_dir, 'scraping_summary.json')
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(summary, f, ensure_ascii=False, indent=2)
-        
-        logging.info(f"Scraping completed! Found {len(all_cats)} cats with images")
+
+        logging.info(f"Scraping completed: {len(all_cats)} cats, {total_images} images.")
         return all_cats
 
 def main():
@@ -247,9 +256,11 @@ def main():
     print()
     
     try:
-        cats = scraper.scrape_cats(max_pages=config.MAX_PAGES, max_cats_per_page=config.MAX_CATS_PER_PAGE)
+        cats = scraper.scrape_cats(max_total_cats=100, max_total_images=1000)
         print(f"\nScraping completed successfully!")
         print(f"Total cats processed: {len(cats)}")
+        total_images = sum(len(cat['images']) for cat in cats)
+        print(f"Total images downloaded: {total_images}")
         print(f"Check the '{config.OUTPUT_DIR}' directory for results.")
         
     except KeyboardInterrupt:

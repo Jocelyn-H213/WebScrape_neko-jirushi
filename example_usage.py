@@ -15,7 +15,7 @@ def example_basic_usage():
     scraper = NekoJirushiScraper()
     
     # Scrape a few cats
-    cats = scraper.scrape_cats(max_pages=1, max_cats_per_page=2)
+    cats = scraper.scrape_cats(max_total_cats=5, max_total_images=20)
     
     print(f"Found {len(cats)} cats")
     for cat in cats:
@@ -32,7 +32,7 @@ def example_custom_settings():
     )
     
     # Scrape with custom limits
-    cats = scraper.scrape_cats(max_pages=2, max_cats_per_page=3)
+    cats = scraper.scrape_cats(max_total_cats=10, max_total_images=50)
     
     print(f"Found {len(cats)} cats with custom settings")
 
@@ -43,7 +43,7 @@ def example_data_analysis():
     scraper = NekoJirushiScraper()
     
     # Scrape some cats
-    cats = scraper.scrape_cats(max_pages=1, max_cats_per_page=5)
+    cats = scraper.scrape_cats(max_total_cats=15, max_total_images=75)
     
     if cats:
         # Analyze the data
@@ -69,11 +69,11 @@ def example_resume_scraping():
     
     # First run
     print("First run:")
-    cats1 = scraper.scrape_cats(max_pages=1, max_cats_per_page=2)
+    cats1 = scraper.scrape_cats(max_total_cats=3, max_total_images=10)
     
     # Second run (should skip already downloaded images)
     print("\nSecond run (should skip existing images):")
-    cats2 = scraper.scrape_cats(max_pages=1, max_cats_per_page=2)
+    cats2 = scraper.scrape_cats(max_total_cats=3, max_total_images=10)
     
     print(f"First run: {len(cats1)} cats")
     print(f"Second run: {len(cats2)} cats")
@@ -87,7 +87,7 @@ def example_error_handling():
     
     try:
         # This might fail due to network issues
-        cats = scraper.scrape_cats(max_pages=1, max_cats_per_page=1)
+        cats = scraper.scrape_cats(max_total_cats=2, max_total_images=5)
         print(f"Successfully scraped {len(cats)} cats")
     except Exception as e:
         print(f"Scraping failed: {e}")

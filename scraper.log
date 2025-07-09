@@ -118,3 +118,57 @@
 2025-07-09 13:51:57,895 - INFO - File already exists: 猫の里親募集_里親になりたい_3.png
 2025-07-09 13:51:58,916 - INFO - File already exists: 猫の里親募集_里親になりたい_4.png
 2025-07-09 13:51:59,940 - INFO - File already exists: 猫の里親募集_里親になりたい_5.png
+2025-07-09 14:06:41,564 - INFO - Trying to get cat listings from: https://www.neko-jirushi.com/foster/cat/?p=1
+2025-07-09 14:06:41,939 - INFO - Found 53 links using selector: a[href*='/cat/']
+2025-07-09 14:06:42,136 - INFO - Found 31 images using selector: img[src*='cat']
+2025-07-09 14:06:42,308 - INFO - File already exists: 猫の里親募集_里親になりたい_1.png
+2025-07-09 14:06:43,383 - INFO - File already exists: 猫の里親募集_里親になりたい_2.png
+2025-07-09 14:06:44,421 - INFO - File already exists: 猫の里親募集_里親になりたい_3.png
+2025-07-09 14:06:45,448 - INFO - File already exists: 猫の里親募集_里親になりたい_4.png
+2025-07-09 14:06:46,539 - INFO - File already exists: 猫の里親募集_里親になりたい_5.png
+2025-07-09 14:06:47,575 - INFO - File already exists: 猫の里親募集_里親になりたい_6.png
+2025-07-09 14:06:48,611 - INFO - File already exists: 猫の里親募集_里親になりたい_7.png
+2025-07-09 14:06:49,653 - INFO - File already exists: 猫の里親募集_里親になりたい_8.png
+2025-07-09 14:06:50,702 - INFO - File already exists: 猫の里親募集_里親になりたい_9.png
+2025-07-09 14:06:51,757 - INFO - File already exists: 猫の里親募集_里親になりたい_10.png
+2025-07-09 14:06:52,804 - INFO - File already exists: 猫の里親募集_里親になりたい_11.png
+2025-07-09 14:06:53,857 - INFO - File already exists: 猫の里親募集_里親になりたい_12.png
+2025-07-09 14:06:54,891 - INFO - File already exists: 猫の里親募集_里親になりたい_13.png
+2025-07-09 14:06:55,935 - INFO - File already exists: 猫の里親募集_里親になりたい_14.jpg
+2025-07-09 14:06:56,983 - INFO - File already exists: 猫の里親募集_里親になりたい_15.jpg
+2025-07-09 14:06:58,046 - INFO - File already exists: 猫の里親募集_里親になりたい_16.jpg
+2025-07-09 14:06:59,082 - INFO - File already exists: 猫の里親募集_里親になりたい_17.jpg
+2025-07-09 14:07:00,147 - INFO - File already exists: 猫の里親募集_里親になりたい_18.jpg
+2025-07-09 14:07:03,377 - INFO - Found 31 images using selector: img[src*='cat']
+2025-07-09 14:07:03,490 - INFO - File already exists: 猫の里親募集_里親になりたい_1.png
+2025-07-09 14:07:04,507 - INFO - File already exists: 猫の里親募集_里親になりたい_2.png
+2025-07-09 14:07:05,570 - INFO - File already exists: 猫の里親募集_里親になりたい_3.png
+2025-07-09 14:07:06,587 - INFO - File already exists: 猫の里親募集_里親になりたい_4.png
+2025-07-09 14:07:07,609 - INFO - File already exists: 猫の里親募集_里親になりたい_5.png
+2025-07-09 14:07:08,640 - INFO - File already exists: 猫の里親募集_里親になりたい_6.png
+2025-07-09 14:07:09,662 - INFO - File already exists: 猫の里親募集_里親になりたい_7.png
+2025-07-09 14:07:10,685 - INFO - File already exists: 猫の里親募集_里親になりたい_8.png
+2025-07-09 14:07:11,712 - INFO - File already exists: 猫の里親募集_里親になりたい_9.png
+2025-07-09 14:07:12,734 - INFO - File already exists: 猫の里親募集_里親になりたい_10.png
+2025-07-09 14:07:13,759 - INFO - File already exists: 猫の里親募集_里親になりたい_11.png
+2025-07-09 14:07:14,819 - INFO - File already exists: 猫の里親募集_里親になりたい_12.png
+2025-07-09 14:07:15,863 - INFO - File already exists: 猫の里親募集_里親になりたい_13.png
+2025-07-09 14:07:16,919 - INFO - File already exists: 猫の里親募集_里親になりたい_14.jpg
+2025-07-09 14:07:17,956 - INFO - File already exists: 猫の里親募集_里親になりたい_15.jpg
+2025-07-09 14:07:19,007 - INFO - File already exists: 猫の里親募集_里親になりたい_16.jpg
+2025-07-09 14:07:20,068 - INFO - File already exists: 猫の里親募集_里親になりたい_17.jpg
+2025-07-09 14:07:21,100 - INFO - File already exists: 猫の里親募集_里親になりたい_18.jpg
+2025-07-09 14:07:24,589 - INFO - Found 5 images using selector: img[src*='cat']
+2025-07-09 14:07:24,772 - INFO - File already exists: 猫の里親募集_里親になりたい_1.jpg
+2025-07-09 14:07:25,827 - INFO - File already exists: 猫の里親募集_里親になりたい_2.jpg
+2025-07-09 14:07:26,883 - INFO - File already exists: 猫の里親募集_里親になりたい_3.jpg
+2025-07-09 14:07:27,920 - INFO - File already exists: 猫の里親募集_里親になりたい_4.jpg
+2025-07-09 14:07:28,967 - INFO - File already exists: 猫の里親募集_里親になりたい_5.jpg
+2025-07-09 14:07:32,190 - INFO - Found 31 images using selector: img[src*='cat']
+2025-07-09 14:07:32,323 - INFO - File already exists: 猫の里親募集_里親になりたい_1.png
+2025-07-09 14:07:33,335 - INFO - File already exists: 猫の里親募集_里親になりたい_2.png
+2025-07-09 14:07:34,361 - INFO - File already exists: 猫の里親募集_里親になりたい_3.png
+2025-07-09 14:07:35,379 - INFO - File already exists: 猫の里親募集_里親になりたい_4.png
+2025-07-09 14:07:36,402 - INFO - File already exists: 猫の里親募集_里親になりたい_5.png
+2025-07-09 14:07:37,419 - INFO - File already exists: 猫の里親募集_里親になりたい_6.png
+2025-07-09 14:07:38,434 - INFO - File already exists: 猫の里親募集_里親になりたい_7.png

@@ -172,6 +172,49 @@ To see more detailed output, you can modify the logging level:
 logging.basicConfig(level=logging.DEBUG, ...)
 ```
 
+## Data Management
+
+Since this scraper can generate large amounts of data (potentially several GB), the scraped data is excluded from version control via `.gitignore`. Here are some tools to manage your data:
+
+### Data Manager Script
+
+Use the included data management script to organize your scraped data:
+
+```bash
+# Get statistics about your scraped data
+python data_manager.py stats
+
+# Create a backup of your data
+python data_manager.py backup
+
+# Create a compressed archive
+python data_manager.py archive --format zip
+
+# Export a summary report
+python data_manager.py summary
+
+# List all backups
+python data_manager.py list
+
+# Clean up old backups (older than 30 days)
+python data_manager.py cleanup --days 30
+```
+
+### Recommended Workflow
+
+1. **Scrape data**: Run the scraper to collect images
+2. **Create backup**: Use `python data_manager.py backup` to create a local backup
+3. **Create archive**: Use `python data_manager.py archive` to create a compressed archive
+4. **Upload to cloud**: Upload the archive to Google Drive, Dropbox, or similar
+5. **Clean up**: Use `python data_manager.py cleanup` to remove old local backups
+
+### Data Storage Options
+
+- **Local**: Keep recent data locally for development
+- **Cloud Storage**: Upload archives to cloud services
+- **External Drive**: Store backups on external drives
+- **Git LFS**: For smaller datasets, consider Git Large File Storage
+
 ## Legal Notice
 
 Please ensure you have permission to scrape the target website and comply with their terms of service. This tool is for educational purposes only.

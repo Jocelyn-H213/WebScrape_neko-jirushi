@@ -2,11 +2,11 @@
 
 A comprehensive web scraping and data processing pipeline for collecting and organizing cat images from [Neko Jirushi](https://www.neko-jirushi.com). This project includes advanced scraping techniques, data cleaning, and dataset reorganization for machine learning applications.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project successfully scraped **166 unique cats** with **11,602 high-quality images** from neko-jirushi.com, creating a comprehensive dataset perfect for training Siamese networks and other computer vision models.
 
-## 🚀 Key Achievements
+## Key Achievements
 
 - **166 distinct cats** successfully scraped and processed
 - **11,602 total images** across all cats (33-186 images per cat)
@@ -15,7 +15,7 @@ This project successfully scraped **166 unique cats** with **11,602 high-quality
 - **Uniform dataset structure** - Perfect for machine learning training
 - **Comprehensive metadata** - Each cat includes detailed information
 
-## 📊 Dataset Statistics
+## Dataset Statistics
 
 - **Total cats**: 166
 - **Total images**: 11,602
@@ -24,7 +24,7 @@ This project successfully scraped **166 unique cats** with **11,602 high-quality
 - **Data quality**: 99.5% cat images (cleaned dataset)
 - **Metadata**: Complete cat information for each individual
 
-## 🛠️ Installation
+## Installation
 
 1. Clone or download this repository
 2. Install the required dependencies:
@@ -33,7 +33,7 @@ This project successfully scraped **166 unique cats** with **11,602 high-quality
 pip install -r requirements.txt
 ```
 
-## 📋 Project Components
+## Project Components
 
 ### Core Scraping Scripts
 
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 - **`diagnose_page.py`** - Page structure analysis
 - **`investigate_real_pagination.py`** - Real pagination investigation
 
-## 🚀 Usage
+## Usage
 
 ### Complete Pipeline (Recommended)
 
@@ -173,7 +173,7 @@ scraped_cats/
 - **`info.json`**: Complete metadata for each cat (name, description, location, etc.)
 - **`reorganization_summary.json`**: Summary of the reorganization process
 
-## 🔧 Technical Details
+## Technical Details
 
 ### API Discovery & Usage
 
@@ -204,7 +204,7 @@ headers = {
 }
 ```
 
-## 🛡️ Error Handling & Robustness
+## Error Handling & Robustness
 
 The scraper includes comprehensive error handling:
 
@@ -215,7 +215,7 @@ The scraper includes comprehensive error handling:
 - **API failures**: Fallback to alternative scraping methods
 - **Progress tracking**: Resume capability from any interruption
 
-## 📝 Logging & Monitoring
+## Logging & Monitoring
 
 The scraper provides detailed logging:
 
@@ -254,7 +254,7 @@ To see more detailed output, you can modify the logging level:
 logging.basicConfig(level=logging.DEBUG, ...)
 ```
 
-## 🧹 Data Management & Cleanup
+## Data Management & Cleanup
 
 Since this scraper generates large amounts of data (potentially several GB), the scraped data is excluded from version control via `.gitignore`. Here are some tools to manage your data:
 
@@ -326,9 +326,9 @@ python reorganize_dataset.py
 - **External Drive**: Store backups on external drives
 - **Git LFS**: For smaller datasets, consider Git Large File Storage
 
-## 📈 Project Journey & Achievements
+## Project Progress & Achievements
 
-### 🎯 Mission Accomplished
+### Tasks Completed
 
 This project successfully evolved from a basic web scraper to a comprehensive data pipeline that:
 
@@ -337,14 +337,14 @@ This project successfully evolved from a basic web scraper to a comprehensive da
 3. **Implemented intelligent cleaning** - Removed non-cat content while preserving all cat images
 4. **Created ML-ready dataset** - Organized 166 cats with 11,602 images in uniform structure
 
-### 🔬 Technical Breakthroughs
+### Technical Breakthroughs
 
 - **API Reverse Engineering**: Discovered the site's AJAX endpoint through JavaScript analysis
 - **Smart Fallback Systems**: When API pagination failed, implemented intelligent cat discovery
 - **Data Quality Assurance**: 99.5% cat image retention rate through intelligent filtering
 - **Scalable Architecture**: Handled 226,121 total available cats across 11,307 pages
 
-### 📊 Final Dataset Quality
+### Final Dataset Quality
 
 - **166 unique cats** with complete metadata
 - **11,602 high-quality images** (33-186 per cat)
@@ -352,7 +352,7 @@ This project successfully evolved from a basic web scraper to a comprehensive da
 - **Perfect ML structure** for Siamese network training
 - **Complete metadata** including names, descriptions, locations, ages
 
-### 🚀 Applications
+### Applications
 
 The resulting dataset is perfect for:
 - **Siamese Network Training** - Individual cat recognition

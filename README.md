@@ -123,7 +123,7 @@ for cat in cats:
     print(f"Details: {cat['details']}")
 ```
 
-## 📁 Output Structure
+## Output Structure
 
 ### Final Organized Dataset
 

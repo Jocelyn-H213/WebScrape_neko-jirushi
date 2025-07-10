@@ -4,6 +4,11 @@ scraped_cats/images/
 scraped_cats/data/
 scraped_cats/*.json
 
+# Reorganized dataset directories
+siamese_dataset/
+scraped_cats_backup/
+scraped_cats_cleaned/
+
 # Backup and archive directories
 backups/
 archives/
@@ -12,6 +17,9 @@ archives/
 
 # Data summary files (optional - you might want to keep these)
 data_summary.json
+reorganization_summary.json
+dataset_cleanup.log
+reorganization.log
 
 # Log files
 *.log

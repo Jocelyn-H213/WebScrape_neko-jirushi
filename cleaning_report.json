@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-07-10T10:10:44.665898",
+  "statistics": {
+    "total_cats": 129,
+    "cleaned_cats": 0,
+    "total_images": 0,
+    "cleaned_images": 0,
+    "removed_images": 11431,
+    "duplicates_removed": 0,
+    "non_cat_removed": 0,
+    "illustration_removed": 1512,
+    "corrupted_removed": 0
+  },
+  "summary": {
+    "total_cats_processed": 129,
+    "cats_with_valid_images": 0,
+    "total_images_processed": 0,
+    "images_kept": 0,
+    "images_removed": 11431,
+    "removal_breakdown": {
+      "duplicates": 0,
+      "non_cat_images": 0,
+      "illustrations": 1512,
+      "corrupted": 0
+    }
+  }
+}

@@ -4,6 +4,8 @@ A comprehensive web scraping and data processing pipeline for collecting and org
 
 The resulting dataset is available on [Kaggle](https://www.kaggle.com/datasets/cronenberg64/cat-re-identification-image-dataset), and this project was developed as part of a project-based-learning course [PBL3_GroupH](https://github.com/cronenberg64/PBL3_GroupH) at Ritsumeikan University.
 
+We also have supplementary cat images from: https://drive.google.com/drive/folders/1TaeplKNUKB6DZA64d8OGVzCsLq3sxCsx?usp=share_link 
+
 ## Related Resources
 
 - [Kaggle: Cat Re-Identification Image Dataset](https://www.kaggle.com/datasets/cronenberg64/cat-re-identification-image-dataset)

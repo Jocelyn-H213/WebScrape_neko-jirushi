@@ -1,0 +1,1015 @@
+{
+  "cleaning_timestamp": "2025-07-12T13:05:45.346844",
+  "dataset_path": "scraped_cats_cleaned",
+  "backup_path": "scraped_cats_cleaned_aggressive_backup",
+  "statistics": {
+    "total_cats": 129,
+    "total_images_before": 400,
+    "total_images_after": 352,
+    "removed_images": 48,
+    "cats_with_removals": 21,
+    "cats_fully_removed": 42,
+    "dimension_removals": 0,
+    "duplicate_removals": 2234,
+    "file_size_removals": 17,
+    "aspect_ratio_removals": 0,
+    "content_removals": 31
+  },
+  "detailed_results": [
+    {
+      "cat_id": "cat_226678",
+      "images_before": 17,
+      "images_after": 6,
+      "removed_count": 11,
+      "removed_reasons": [
+        "Too small: 600x180 (min: 300x300)",
+        "Too small: 300x250 (min: 300x300)",
+        "Too small: 214x114 (min: 300x300)",
+        "Too small: 500x168 (min: 300x300)",
+        "File too small: 5296 bytes (min: 10000)",
+        "File too small: 5276 bytes (min: 10000)",
+        "Too small: 212x114 (min: 300x300)",
+        "Too small: 214x114 (min: 300x300)",
+        "Too small: 350x142 (min: 300x300)",
+        "Too small: 350x142 (min: 300x300)",
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226475",
+      "images_before": 1,
+      "images_after": 1,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226815",
+      "images_before": 20,
+      "images_after": 2,
+      "removed_count": 18,
+      "removed_reasons": [
+        "File too small: 6365 bytes (min: 10000)",
+        "File too small: 6186 bytes (min: 10000)",
+        "File too small: 7104 bytes (min: 10000)",
+        "File too small: 7096 bytes (min: 10000)",
+        "File too small: 8463 bytes (min: 10000)",
+        "Too small: 1272x240 (min: 300x300)",
+        "Too small: 180x180 (min: 300x300)",
+        "File too small: 7163 bytes (min: 10000)",
+        "Too small: 200x200 (min: 300x300)",
+        "Too small: 600x180 (min: 300x300)",
+        "Too small: 600x180 (min: 300x300)",
+        "Too small: 200x200 (min: 300x300)",
+        "File too small: 8491 bytes (min: 10000)",
+        "File too small: 9598 bytes (min: 10000)",
+        "File too small: 8373 bytes (min: 10000)",
+        "File too small: 9488 bytes (min: 10000)",
+        "File too small: 7827 bytes (min: 10000)",
+        "File too small: 7458 bytes (min: 10000)"
+      ]
+    },
+    {
+      "cat_id": "cat_226640",
+      "images_before": 4,
+      "images_after": 4,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226649",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226676",
+      "images_before": 7,
+      "images_after": 6,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226682",
+      "images_before": 4,
+      "images_after": 3,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226685",
+      "images_before": 7,
+      "images_after": 6,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226671",
+      "images_before": 6,
+      "images_after": 5,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226625",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226870",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226410",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226825",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226670",
+      "images_before": 5,
+      "images_after": 4,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226684",
+      "images_before": 7,
+      "images_after": 6,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226683",
+      "images_before": 6,
+      "images_after": 5,
+      "removed_count": 1,
+      "removed_reasons": [
+        "File too small: 9935 bytes (min: 10000)"
+      ]
+    },
+    {
+      "cat_id": "cat_226677",
+      "images_before": 3,
+      "images_after": 2,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226445",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226679",
+      "images_before": 4,
+      "images_after": 3,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226480",
+      "images_before": 1,
+      "images_after": 1,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226420",
+      "images_before": 2,
+      "images_after": 2,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226615",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226840",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226885",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226590",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226555",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226760",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226705",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226530",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226795",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226750",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226565",
+      "images_before": 4,
+      "images_after": 4,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226500",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226735",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226525",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226710",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226775",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226540",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226585",
+      "images_before": 1,
+      "images_after": 1,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226720",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226515",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226570",
+      "images_before": 4,
+      "images_after": 4,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226745",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226780",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226405",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226865",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226630",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226664",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226690",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226663",
+      "images_before": 1,
+      "images_after": 1,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226655",
+      "images_before": 2,
+      "images_after": 2,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226800",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226652",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226460",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226890",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226855",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226600",
+      "images_before": 2,
+      "images_after": 2,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226435",
+      "images_before": 2,
+      "images_after": 2,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226495",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226653",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226654",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226662",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226450",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226665",
+      "images_before": 1,
+      "images_after": 1,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226830",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226880",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226610",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226845",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226425",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226485",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226440",
+      "images_before": 4,
+      "images_after": 4,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226672",
+      "images_before": 6,
+      "images_after": 5,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226820",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226675",
+      "images_before": 7,
+      "images_after": 6,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226681",
+      "images_before": 2,
+      "images_after": 1,
+      "removed_count": 1,
+      "removed_reasons": [
+        "File too small: 7410 bytes (min: 10000)"
+      ]
+    },
+    {
+      "cat_id": "cat_226415",
+      "images_before": 4,
+      "images_after": 4,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226620",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226875",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226680",
+      "images_before": 6,
+      "images_after": 5,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226674",
+      "images_before": 6,
+      "images_after": 5,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226673",
+      "images_before": 7,
+      "images_after": 6,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226810",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226645",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226470",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226730",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226505",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226560",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226755",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226790",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226535",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226700",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226765",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226550",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226595",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226785",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226740",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226575",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226510",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226725",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226580",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226545",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226770",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226715",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226520",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226660",
+      "images_before": 2,
+      "images_after": 2,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226835",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226455",
+      "images_before": 2,
+      "images_after": 2,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226667",
+      "images_before": 4,
+      "images_after": 3,
+      "removed_count": 1,
+      "removed_reasons": [
+        "File too small: 9942 bytes (min: 10000)"
+      ]
+    },
+    {
+      "cat_id": "cat_226658",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226651",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226490",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226656",
+      "images_before": 4,
+      "images_after": 4,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226669",
+      "images_before": 4,
+      "images_after": 3,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226430",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226850",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226605",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226895",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226465",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226657",
+      "images_before": 1,
+      "images_after": 1,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226668",
+      "images_before": 3,
+      "images_after": 2,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226650",
+      "images_before": 4,
+      "images_after": 4,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226805",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226666",
+      "images_before": 7,
+      "images_after": 6,
+      "removed_count": 1,
+      "removed_reasons": [
+        "Too small: 310x220 (min: 300x300)"
+      ]
+    },
+    {
+      "cat_id": "cat_226659",
+      "images_before": 2,
+      "images_after": 2,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226661",
+      "images_before": 5,
+      "images_after": 5,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226695",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226860",
+      "images_before": 0,
+      "images_after": 0,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226635",
+      "images_before": 6,
+      "images_after": 6,
+      "removed_count": 0,
+      "removed_reasons": []
+    },
+    {
+      "cat_id": "cat_226400",
+      "images_before": 3,
+      "images_after": 3,
+      "removed_count": 0,
+      "removed_reasons": []
+    }
+  ],
+  "removal_criteria": {
+    "min_file_size": 10000,
+    "max_file_size": 20971520,
+    "min_dimensions": "300x300",
+    "max_dimensions": "8000x8000",
+    "aspect_ratio_limits": "0.3-3.0",
+    "problematic_sizes": [
+      5276,
+      6490,
+      5871,
+      4058,
+      4560,
+      3480,
+      1964,
+      4634,
+      2713,
+      883,
+      1505,
+      1320,
+      2326,
+      4356
+    ]
+  }
+}

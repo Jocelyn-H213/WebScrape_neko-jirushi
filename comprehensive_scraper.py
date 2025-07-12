@@ -373,11 +373,18 @@ class ComprehensiveCatScraper:
         logging.info(f"Failed pages: {len(self.progress['failed_pages'])}")
 
 def main():
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="Comprehensive cat scraper")
+    parser.add_argument("--target", type=int, default=100, help="Target number of cats to scrape")
+    parser.add_argument("--max-pages", type=int, default=50, help="Maximum number of pages to scrape")
+    
+    args = parser.parse_args()
+    
     scraper = ComprehensiveCatScraper()
     
     try:
-        # Start with a reasonable target - we can always increase it
-        scraper.run_comprehensive_scrape(target_cats=1000, max_pages=50)
+        scraper.run_comprehensive_scrape(target_cats=args.target, max_pages=args.max_pages)
     except KeyboardInterrupt:
         logging.info("Scraping interrupted by user")
         scraper.save_progress()
